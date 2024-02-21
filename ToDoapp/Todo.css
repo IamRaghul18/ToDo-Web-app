@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Nunito" ,sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 800;
+	color:lavenderblush;
+	margin-bottom: 1rem;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color:var(--grey);
+    font-weight: 500;
+}
+
+#new-task-submit {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 800;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: lavenderblush;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	color: crimson;
+}
+footer {
+    padding: 1rem;
+    text-align: center;
+    margin-top: -10px; /* Adjust the margin-top to move the card up */
+}
+
+footer p {
+    padding: 10px;
+    color: lemonchiffon;
+    background-color: var(--dark);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Adjust the margin-bottom to move the text upwards */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    border-radius: 50%; /* Make it circular */
+   
+    overflow: hidden;
+}
+
+.social-links img {
+    width: 50px; /* Set the desired width of the circular images */
+    height: 50px; /* Set the desired height of the circular images */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+    filter: brightness(80%); /* Reduce brightness on hover */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Add glow effect */
+}
+/* Existing styles */
+
+/* Media query for iPhone 12, 13, 14, 15 */
+@media only screen and (max-width: 390px) {
+    /* Adjust styles for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Add more adjustments as needed */
+}
+
+/* Media query for Pixel 7 and above */
+@media only screen and (min-width: 411px) and (min-resolution: 432dpi) {
+    /* Adjust styles for Pixel 7 and above */
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Add more adjustments as needed */
+}
