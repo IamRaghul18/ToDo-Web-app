@@ -22,6 +22,8 @@ body {
 	min-height: 100vh;
 	color: #FFF;
 	background-color: var(--dark);
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+
 }
 
 header {
@@ -204,32 +206,194 @@ footer p {
     filter: brightness(80%); /* Reduce brightness on hover */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Add glow effect */
 }
+
+
 /* Existing styles */
+
 
 /* Media query for iPhone 12, 13, 14, 15 */
 @media only screen and (max-width: 390px) {
-    /* Adjust styles for smaller screens */
     body {
         font-size: 14px;
     }
 
     header h1 {
         font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
-    /* Add more adjustments as needed */
+    #new-task-input {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    #new-task-submit {
+        font-size: 1rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
 }
 
 /* Media query for Pixel 7 and above */
 @media only screen and (min-width: 411px) and (min-resolution: 432dpi) {
-    /* Adjust styles for Pixel 7 and above */
     body {
         font-size: 16px;
     }
 
     header h1 {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
 
-    /* Add more adjustments as needed */
+    #new-task-input {
+        font-size: 1.25rem;
+        margin-right: 1rem;
+    }
+
+    #new-task-submit {
+        font-size: 1.25rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Additional Media Queries for Various Screen Sizes */
+/* Adjustments for screens up to 576px */
+@media only screen and (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #new-task-input {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    #new-task-submit {
+        font-size: 1rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Adjustments for screens up to 768px */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #new-task-input {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    #new-task-submit {
+        font-size: 1rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Adjustments for screens up to 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #new-task-input {
+        font-size: 1.25rem;
+        margin-right: 1rem;
+    }
+
+    #new-task-submit {
+        font-size: 1.25rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Adjustments for screens up to 1200px */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #new-task-input {
+        font-size: 1.25rem;
+        margin-right: 1rem;
+    }
+
+    #new-task-submit {
+        font-size: 1.25rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Landscape Orientation */
+@media only screen and (orientation: landscape) {
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #new-task-input {
+        font-size: 1.25rem;
+        margin-right: 1rem;
+    }
+
+    #new-task-submit {
+        font-size: 1.25rem;
+    }
+
+    .task-list h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
 }
