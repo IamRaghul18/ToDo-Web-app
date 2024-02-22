@@ -21,7 +21,7 @@ Check out the live demo [here](https://to-do-list-018.netlify.app/).
 1. Clone the repository:
 
     ```bash
-    git clone [https://github.com/IamRaghul18/ToDo-Web-app.get]
+    git clone https://github.com/IamRaghul18/ToDo-Web-app.get
     ```
 
 2. Navigate to the project directory:
